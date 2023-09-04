@@ -1,12 +1,12 @@
-export interface DotaOriginalResponse {
+export interface HeroesOriginalResponse {
   result: {
     data: {
-      heroes: DotaOriginalHero[]
+      heroes: HeroOriginalResponse[]
     }
   }
 }
 
-export interface DotaOriginalHero {
+export interface HeroOriginalResponse {
   id: number,
   name: string,
   name_loc: string,
