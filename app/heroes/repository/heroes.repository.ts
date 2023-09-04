@@ -1,4 +1,5 @@
 import axios, { AxiosResponse } from 'axios';
+import { DotaOriginalResponse } from "../interfaces/dota-original-response.interface";
 
 export const getAllHeroes = async () => {
     return await axios({

@@ -1,4 +1,4 @@
-interface DotaOriginalResponse {
+export interface DotaOriginalResponse {
   result: {
     data: {
       heroes: DotaOriginalHero[]
@@ -6,7 +6,7 @@ interface DotaOriginalResponse {
   }
 }
 
-interface DotaOriginalHero {
+export interface DotaOriginalHero {
   id: number,
   name: string,
   name_loc: string,
