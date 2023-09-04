@@ -1,14 +1,11 @@
 import { Request, Response } from "express";
+import { getAllHeroes } from "../repository/heroes.repository";
 
 export const heroesController = async (req: Request, res: Response) => {
   try {
+    const heroes = await getAllHeroes();
     res.status(200).json({
-      heroes: [
-        {
-          id: '1',
-          name: 'Phanton Assasin'
-        }
-      ]
+      heroes: heroes
     });
   } catch (e) {
     return res.status(404).json({
